@@ -89,6 +89,18 @@ namespace LightBulbs
                 {
                     Console.WriteLine(n); 
                 }
+                Console.WriteLine("____________________________________");
+                Console.WriteLine("How many bulbs are on?");
+                int count = 0;
+                for (int i = 0; i < finalState.Count; i++)
+                {                    
+                    if (finalState[i] == 1)
+                    {
+                        count++;
+                        Console.WriteLine("Bulb on at position: " + (i+1));
+                    }                    
+                }
+                Console.WriteLine("Total bulbs on: " + count);
                 Console.ReadLine();
                 
             }
